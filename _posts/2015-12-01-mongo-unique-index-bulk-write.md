@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Example content
+title: Mongo unique index and bulk write应用问题总结
 date: 2015-12-01 22:02:56
 ---
 ####背景####
