@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mongo uninque index and bulk write应用问题总结
+title: Mongo Uninque Index and Bulk Write应用问题总结
 ---
 ####背景####
 某个游戏数据平台最近线上连续出现了两个比较诡异的问题，都是在数据库迁移之后遇到的问题，而且问题二是解决问题一的时候，没有考虑充分实现细节带来的问题，这些问题出现的原因都是开发者没有充分理解好MongoDB的唯一索引与批量写操作。
