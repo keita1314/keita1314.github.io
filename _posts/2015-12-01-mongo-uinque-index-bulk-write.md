@@ -37,7 +37,7 @@ If the operation fails because of a duplicate index key error, applications may 
 
 #####问题二#####
 在解决问题一之后，问题二就接接踵而来，父结点人数正常，子结点人数恰好是游戏输出的2倍，因为2倍这个数字比较特别，所以我们也就立刻怀疑是重复upsert了，与游戏产品确认提交没问题，就开始排查WEB服务的日志，后来发现，每次人数double的时间点，WEB都会输出一段Bulk Write失败的日志。
- >[Fri Dec 25 12:10:01 2015] [error] [client 223.252.221.158] #0 /home/opsys/onlinenum/include/entity.php(257): MongoWriteBatch->execute()\n#1 /home/opsys/onlinenum/api/save-bulk.php(85): Entity->saveNumber(Array)\n#2 /home/opsys/onlinenum/api/save-bulk.php(120): save(Array)\n#3 {main}
+ >[xxx xxx 25 12:10:01 2015] [error] [client x.x.x.x] #0 /home/opsys/xxxnum/include/entity.php(257): MongoWriteBatch->execute()\n#1 /home/opsys/xxxnum/api/save-xxx.php(85): Entity->saveNumber(Array)\n#2 /home/opsys/xxxnum/api/save-xxx.php(120): save(Array)\n#3 {main}
 
 这段日志只输出了error的message，其实还是没看到触发问题的原因，如果仔细研究error的数据结构，这里面是包含了许多有用的信息的，如果能输出更有助于定位原因的信息会更加好。这让我们怀疑是程序里面实现的重试机制导致了问题二的出现，然后开始各种查阅资料和测试，最终定位原因是我们的重试机制没有考虑细节。
 首先看Mongo Bulk Write的细节，一个Bulk Write操作可能是有序或者无序的
