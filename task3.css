@@ -1,0 +1,39 @@
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+
+.content, .left, .main, .right {
+ border-style:solid;
+ border-color:#999;
+ border-width:1px;
+ padding:20px;
+ box-sizing:border-box;
+ background-color:#eee;
+} 
+
+@media screen and (min-width:500px) {
+.left, .right, .main {
+ float:left;
+}
+.left {
+  width:200px;
+  height:200px;
+  margin-left:-100%;
+}
+
+.main {
+  margin-left:220px;
+  margin-right:140px;
+}
+
+.right {
+  width:120px;
+  margin-left:-120px;
+}
+img {
+  margin-bottom:20px;
+}
+.team-name {
+  float:right;
+}
+}
+
