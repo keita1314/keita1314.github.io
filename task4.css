@@ -1,26 +1,30 @@
 .rect {
-   width:400px;
-   height:200px;
-   background-color:#ccc;
-   position:relative;
-   margin: 0 auto;
-   top:50%;
-   margin-top:-100px;
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -100px;
+    margin-left: -200px;
 }
+
 .circle {
-	width:50px;
-    height:50px;
-    background-color:#fc0;
+    width: 50px;
+    height: 50px;
+    background-color: #fc0;
 }
+
 .right-bottom {
-	border-radius:0px 0px 50px 0px;
-    position:absolute;
-    left:0px;
+    border-radius: 0px 0px 50px 0px;
+    position: relative;
+    left: 0px;
     top: 0px;
 }
+
 .left-top {
-	border-radius:50px 0px 0px 0px;
-    position:absolute;
-    right:0px;
-    bottom:0px;
+    border-radius: 50px 0px 0px 0px;
+    position: relative;
+    left: 350px;
+    top: 100px;
 }
