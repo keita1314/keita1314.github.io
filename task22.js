@@ -56,6 +56,7 @@ function colorNode(node) {
     }
   });
 }
+
 function clearAllTimeOut() {
   allTimer.forEach(function(item) {
     clearTimeout(item);
@@ -106,16 +107,25 @@ preOrderButton.onclick = function() {
   i = 1;
   colorNode(null);
   preOrder(root);
+  allTimer.push(setTimeout(function() {
+    colorNode(null);
+  }, i * 1000));
 }
 midOrderButton.onclick = function() {
   clearAllTimeOut();
   i = 1;
   colorNode(null);
   midOrder(root);
+  allTimer.push(setTimeout(function() {
+    colorNode(null);
+  }, i * 1000));
 }
 postOrderButton.onclick = function() {
   clearAllTimeOut();
   i = 1;
   colorNode(null);
   postOrder(root);
+  allTimer.push(setTimeout(function() {
+    colorNode(null);
+  }, i * 1000));
 }
