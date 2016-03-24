@@ -13,6 +13,7 @@ function BinaryTree(data) {
 
 
 var all = [];
+var allTimer = [];
 
 function buildTree(level) {
   var rootElement = document.querySelector(".root");
@@ -55,11 +56,16 @@ function colorNode(node) {
     }
   });
 }
+function clearAllTimeOut() {
+  allTimer.forEach(function(item) {
+    clearTimeout(item);
+  })
+}
 
 function visit(node) {
-  setTimeout(function() {
+  allTimer.push(setTimeout(function() {
     colorNode(node);
-  }, (i++) * 1000);
+  }, (i++) * 1000));
 }
 
 // pre
@@ -96,16 +102,19 @@ var preOrderButton = document.querySelector("#preOrder");
 var midOrderButton = document.querySelector("#midOrder");
 var postOrderButton = document.querySelector("#postOrder");
 preOrderButton.onclick = function() {
+  clearAllTimeOut();
   i = 1;
   colorNode(null);
   preOrder(root);
 }
 midOrderButton.onclick = function() {
+  clearAllTimeOut();
   i = 1;
   colorNode(null);
   midOrder(root);
 }
 postOrderButton.onclick = function() {
+  clearAllTimeOut();
   i = 1;
   colorNode(null);
   postOrder(root);
