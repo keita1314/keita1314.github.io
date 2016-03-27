@@ -23,9 +23,7 @@
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  background-clip: content-box;
   padding: 10px;
-  outline-offset: -10px;
 }
 .item {
   height: 50px;
