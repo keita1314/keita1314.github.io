@@ -139,6 +139,7 @@ html
     </html>
 
 表现如下宽度大于768px
+
 ![请在这里输入图片描述](http://ww1.sinaimg.cn/mw690/c752b558gw1f2e1158qeij212w06ajra.jpg)
 
 ####响应式####
@@ -279,6 +280,7 @@ html
     </html>
 
 表现如下屏幕宽度小于768px
+
 ![请在这里输入图片描述](http://ww4.sinaimg.cn/mw690/c752b558gw1f2e115lehej20gg09wa9x.jpg)
 
 ![请在这里输入图片描述](https://sawiki2.nie.netease.com/media/image/gjdn1690/20160329203311.gif)
