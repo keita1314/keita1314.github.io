@@ -285,4 +285,14 @@ html
 
 ![请在这里输入图片描述](https://sawiki2.nie.netease.com/media/image/gjdn1690/20160329203311.gif)
 
+####偏移####
+有一些单元格需要偏移，只需要设置margin-left就可以，类似这样
+
+    col-offset-1 {
+        margin-left: 8.333334%
+    }
+
+
 [1] http://j4n.co/blog/Creating-your-own-css-grid-system
+[2] http://ife.baidu.com/task/detail?taskId=8
+[3] https://getbootstrap.com/examples/grid/
