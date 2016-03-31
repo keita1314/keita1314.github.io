@@ -293,8 +293,9 @@ html
     }
 
 
-[1] http://j4n.co/blog/Creating-your-own-css-grid-system
 
-[2] http://ife.baidu.com/task/detail?taskId=8
+[1] http://j4n.co/blog/Creating-your-own-css-grid-system  
+
+[2] http://ife.baidu.com/task/detail?taskId=8  
 
 [3] https://getbootstrap.com/examples/grid/
