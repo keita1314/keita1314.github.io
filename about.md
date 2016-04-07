@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-2015-04-08 - Now, work at netease game
+2015-04-08 - Now, 网易游戏，资深运营系统开发
 
 ### Contact me
 
