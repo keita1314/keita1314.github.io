@@ -5,11 +5,7 @@ layout: default
 <div class="archive">
   {% for post in site.posts %}
     <article class="post">
-
-    <a href="{{ site.baseurl }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
-  <div class="date">
-    {{ post.date | date: "%B %e, %Y" }}
-  </div>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}&nbsp&nbso&nbso&nbsp{{ post.date | date: "%B %e, %Y" }}</a>
     </article>
   {% endfor %}
 </div>
