@@ -1,0 +1,28 @@
+th i {
+	float: right;
+}
+th, td {
+    width: 80px;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    font-size: 0;
+    line-height: 0;
+    clear: right;
+    position: relative;
+    top: 5px;
+}
+
+.arrow-up {    
+    width: 0;     
+    height: 0;     
+    border-left: 6px solid transparent;    
+    border-right: 6px solid transparent; 
+    border-bottom: 6px solid black;   
+    font-size: 0;    
+    line-height: 0;    
+} 

@@ -1,0 +1,330 @@
+var tableSchema = {
+	freezeTableHeader: true,
+	fields: [{
+		name: 'name',
+		label: '姓名',
+		sortable: false,
+	}, {
+		name: 'chinese',
+		label: '语文',
+		sortable: false,
+	}, {
+		name: 'math',
+		label: '数学',
+		sortable: false,
+	}, {
+		name: 'english',
+		label: '英语',
+		sortable: false,
+	}, {
+		name: 'total',
+		label: '总分',
+		sortable: false,
+	}, ]
+};
+var datas = [{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},
+{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},
+{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},
+{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+},{
+	name: '小明',
+	chinese: 80,
+	math: 90,
+	english: 70,
+	total: 240
+}, {
+	name: '小红',
+	chinese: 90,
+	math: 60,
+	english: 90,
+	total: 240
+}, {
+	name: '小亮',
+	chinese: 60,
+	math: 100,
+	english: 70,
+	total: 230
+}
+];
+var t = createTable('#ui-table', tableSchema, datas);
